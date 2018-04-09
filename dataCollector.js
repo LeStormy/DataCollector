@@ -23,17 +23,28 @@ const arguments = parseArgs(process.argv);
 			res = await collector.getCountriesList(arguments.c, arguments.f, arguments.s);
 			break;
 		case "Soccer":
-			res = await collector.getSoccerGames(arguments.c, arguments.f, arguments.s);
+			res = await collector.getSoccerGames(arguments.d);
+			break;
+		case "MLB":
+			res = await collector.getMLBGames(arguments.c, arguments.f, arguments.s);
+			break;
+		case "NFL":
+			res = await collector.getNFLGames(arguments.c, arguments.f, arguments.s);
 			break;
 
 	}
 
-		res.items.forEach(function(e) {
-			console.log(e);
-			console.log("\n\n====================================================\n\n");
-
-		});
-//		console.log(res.items[0].city.country.name);
-//		console.log(res);
+//		let leagues = [];
+//		res.items.forEach(function(e) {
+//			if (!leagues.includes(e.competition))
+//				leagues.push(e.competition);
+////			console.log(e);
+////			console.log("\n\n====================================================\n\n");
+//
+//		});
+//		leagues.sort();
+//		console.log(leagues);
+////		console.log(res.items[0].city.country.name);
+		console.log(res);
 
 })();
