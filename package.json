@@ -1,6 +1,6 @@
 {
-  "name": "DataCollector",
-  "version": "1.0.0",
+  "name": "elstormy-data-collector",
+  "version": "1.1.0",
   "description": "A command line program to retrieve data via the hooks:data api",
   "bin": {
     "dataCollector": "dataCollector.js"
@@ -10,16 +10,16 @@
   },
   "files": [
     "dataCollector.js",
-    "lib/"
+    "lib/hooksApi.js"
   ],
   "dependencies": {
     "minimist": "^1.2.0",
-    "node-fetch": "2.1.2",
+    "node-fetch": "2.1.2"
   },
   "repository": {
     "type": "git",
     "url": "git@github.com/stormyGit/DataCollector.git"
   },
   "author": "",
-  "license": "UNLICENSED"
+  "license": "MIT"
 }

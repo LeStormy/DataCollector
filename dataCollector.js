@@ -25,7 +25,7 @@ const readline = require('readline');
 			res = await collector.getNextSnowyDaysInCity(arguments.c, arguments.d);
 			break;
 		case "Soccer":
-			res = await collector.getSoccerGames(arguments.d);
+			res = await collector.getSoccerGames(arguments.d, arguments.e);
 			break;
 
 	}
